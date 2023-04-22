@@ -1,0 +1,22 @@
+
+what is React Custom Hook ?
+
+Custom Hooks are javascript function .The name start with use prefix .
+
+inside custom hook we can call other react hooks like useState,useEffect etc..
+
+
+
+what is the differnce between Hook  function  and normal javascript  function ?
+
+in normal javascript function we can not call another react hook 
+
+in hook function we can call other hooks 
+
+
+
+what is differnce between functional component and custom Hook ?
+
+functional component return a JSX Code 
+
+custom hook return a logics 
