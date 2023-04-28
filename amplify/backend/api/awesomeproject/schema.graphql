@@ -1,0 +1,11 @@
+type Metstruckplod @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  trucknumber: String!
+  enginehours: String
+  date: AWSDate!
+  operatorname: String!
+  hoursworked: String!
+  shift: String!
+  crew: String!
+}
+ 

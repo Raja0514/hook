@@ -10,6 +10,20 @@
       "StackName": "amplify-awesomeproject-dev-215814",
       "StackId": "arn:aws:cloudformation:us-east-1:275511502947:stack/amplify-awesomeproject-dev-215814/fd76a970-daed-11ed-bb23-125a0a49e883",
       "AmplifyAppId": "d18rtmsoh46uel"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d18rtmsoh46uel",
+          "type": "manual"
+        }
+      },
+      "api": {
+        "awesomeproject": {}
+      },
+      "auth": {
+        "AwesomeProject": {}
+      }
     }
   }
 }

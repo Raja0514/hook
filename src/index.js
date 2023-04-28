@@ -1,29 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import {Amplify} from 'aws-amplify';
-import awsconfig from './aws-exports';
-
-import { Authenticator } from '@aws-amplify/ui-react';
-
-import '@aws-amplify/ui-react/styles.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+//import App from "./App";
+import App1 from "./App1";
+import { Amplify } from "aws-amplify";
+import awsconfig from "./aws-exports";
 
 
 
-Amplify.configure(awsconfig)
+import { BrowserRouter } from "react-router-dom";
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+Amplify.configure(awsconfig);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <Authenticator>
 
-  <React.StrictMode>
-    <App />
-   
+    <React.StrictMode>
+    <BrowserRouter>
 
-  </React.StrictMode>
-        </Authenticator>
+      <App1 />
+      </BrowserRouter>
 
+    </React.StrictMode>
+  
 );
-

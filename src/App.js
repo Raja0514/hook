@@ -8,7 +8,7 @@ import { Auth } from "aws-amplify";
 
 function App() {
 
-  const [mets, setMets] = useState([]);
+   const [mets, setMets] = useState([]);
 
   console.log(mets);
 
@@ -55,7 +55,7 @@ function App() {
             {mets.map((met) => (
           <tr tr key={met.id} >
             
-              <td>{met.trucknumber}</td>
+              <td>{met.rucknumtber}</td>
               <td>{met.enginehours}</td>
               <td>{met.date}</td>
               <td>{met.operatorname}</td>
