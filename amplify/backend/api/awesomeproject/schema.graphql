@@ -1,3 +1,79 @@
+type Numberofloads @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  loads: Int
+}
+
+type Reamers @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  reamerssize: String!
+  reamersused: String!
+  reamersdamage: String!
+  reamerslost: String!
+}
+
+type Couplings @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  couplingssize: String!
+  couplingsused: String!
+  couplingsdamage: String!
+  couplingslost: String!
+}
+
+type Shanks @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  shankssize: String!
+  shanksused: String!
+  shanksdamage: String!
+  shankslost: String!
+}
+
+type Steels @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  steelssize: String
+  steelsused: String
+  steelsdamage: String
+  steelslost: String
+}
+
+type Bits @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  bitssize: String
+  bitsused: String
+  bitsdamage: String
+  bitslost: String
+}
+
+type Developmentdrilling @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  heading: String!
+  holes: String!
+  splitsetbolts: String!
+  tunnelprofilewidth: String!
+  tunnelprofileheight: String!
+  meshsheet: String!
+  scalinghours: String!
+  tunnelprofiledistance: String
+}
+
+type Loadinglocatins @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  fromlocation: String!
+  development: String
+  loadinglocation: String
+  fromstockpile: String
+  toromfinger: String
+  bog: String
+}
+
+type Prestart @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  odometerreading: Int
+  enginehoursos: Int
+  categeoryAfault: String
+  categeoryBfault: String
+  categeoryCfault: String
+}
+
 type Metstruckplod @model @auth(rules: [{allow: public}]) {
   id: ID!
   trucknumber: String!
@@ -7,5 +83,4 @@ type Metstruckplod @model @auth(rules: [{allow: public}]) {
   hoursworked: String!
   shift: String!
   crew: String!
-}
- 
+} 

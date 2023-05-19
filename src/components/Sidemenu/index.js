@@ -1,7 +1,6 @@
 import {
     AppstoreOutlined,
-    ShopOutlined,
-    ShoppingCartOutlined,
+    
     UserOutlined,
   } from "@ant-design/icons";
   import { Menu } from "antd";
@@ -30,55 +29,77 @@ import {
           selectedKeys={[selectedKeys]}
           items={[
              {
-               label: "Dashbaord",
+               label: "Prestart",
                icon: <AppstoreOutlined />,
-               key: "/",
+               key: "/prestart",
              },
-            {
-              label: "Categeory A fault",
-              key: "/inventory",
-              icon: <AppstoreOutlined/>,
+             {
+              label: "Metsplod",
+              key: "/metsplod",
+              icon: <UserOutlined />,
             },
-            {
-              label: "Categeory B fault",
-              key: "/orders",
-              icon: <AppstoreOutlined />,
-            },
-            {
-              label: "Categeory C fault",
-              key: "/orders",
-              icon: <AppstoreOutlined />,
-            },
+            // {
+            //   label: "Categeory A fault",
+            //   key: "/inventory",
+            //   icon: <AppstoreOutlined/>,
+            // },
+            // {
+            //   label: "Categeory B fault",
+            //   key: "/orders",
+            //   icon: <AppstoreOutlined />,
+            // },
+            // {
+            //   label: "Categeory C fault",
+            //   key: "/orders",
+            //   icon: <AppstoreOutlined />,
+            // },
             {
               label: "Number of Loads",
-              key: "/orders",
+              key: "/loads",
               icon: <AppstoreOutlined />,
             },
-            {
-              label: "ActivitySheet",
-              key: "/orders",
-              icon: <AppstoreOutlined />,
-            },
+            // {
+            //   label: "ActivitySheet",
+            //   key: "/orders",
+            //   icon: <AppstoreOutlined />,
+            // },
             {
               label: "Loading Locations",
-              key: "/orders",
+              key: "/location",
               icon: <AppstoreOutlined />,
             },
             {
               label: "Development Drilling",
-              key: "/orders",
+              key: "/development",
               icon: <AppstoreOutlined />,
             },
             {
-              label: "Consumbles",
-              key: "/orders",
+              label: "Consumble Bits",
+              key: "/consumablebits",
               icon: <AppstoreOutlined />,
             },
             {
-              label: "Metsplod",
-              key: "/customers",
-              icon: <UserOutlined />,
+              label: "Consumble Steels",
+              key: "/consumablesteels",
+              icon: <AppstoreOutlined />,
             },
+            {
+              label: "Consumble Shanks",
+              key: "/consumableshanks",
+              icon: <AppstoreOutlined />,
+            },
+            {
+              label: "Consumble Couplings",
+              key: "/consumablecouplings",
+              icon: <AppstoreOutlined />,
+            },
+            {
+              label: "Consumble Reamers",
+              key: "/consumablereamers",
+              icon: <AppstoreOutlined />,
+            },
+
+            
           ]}
         ></Menu>
       </div>

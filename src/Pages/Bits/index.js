@@ -4,20 +4,20 @@ import { useEffect, useState } from "react";
 
 import { DataStore } from "aws-amplify";
 
-import { Loadinglocatins } from "../../models";
+import { Bits } from "../../models";
 
-function Loadinglocation() {
+function Consumablebits() {
   const [dataSource, setDataSource] = useState([]);
   console.log(dataSource);
 
   async function fetchContacts() {
-    const data = await DataStore.query(Loadinglocatins);
+    const data = await DataStore.query(Bits);
     setDataSource(data);
   }
 
   useEffect(() => {
     fetchContacts();
-    const subscription = DataStore.observe(Loadinglocatins).subscribe(() =>
+    const subscription = DataStore.observe(Bits).subscribe(() =>
       fetchContacts()
     );
     return () => subscription.unsubscribe();
@@ -25,34 +25,25 @@ function Loadinglocation() {
 
   return (
     <Space size={5} direction="vertical">
-      <Typography.Title level={2}>Loading Locations</Typography.Title>
+      <Typography.Title level={2}>Consumable Bits</Typography.Title>
       <Table
         className="table"
         columns={[
           {
-            title: "From Loaction",
-            dataIndex: "fromlocation",
+            title: "Bits Size",
+            dataIndex: "bitssize",
           },
           {
-            title: "Development",
-            dataIndex: "development",
+            title: "Bits Used",
+            dataIndex: "bitsused",
           },
           {
-            title: "Loading Loaction ",
-            dataIndex: "loadinglocation",
+            title: "Bits Damage",
+            dataIndex: "bitsdamage",
           },
           {
-            title: "From Stockpile",
-            dataIndex: "fromstockpile",
-          },
-
-          {
-            title: "To ROM Finger",
-            dataIndex: "toromfinger",
-          },
-          {
-            title: "Bog",
-            dataIndex: "bog",
+            title: "Bits Lost",
+            dataIndex: "bitslost",
           },
         ]}
         dataSource={dataSource}
@@ -63,4 +54,4 @@ function Loadinglocation() {
     </Space>
   );
 }
-export default Loadinglocation;
+export default Consumablebits;

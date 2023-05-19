@@ -6,7 +6,7 @@ import { DataStore } from "aws-amplify";
 
 import { Metstruckplod } from "../../models";
 
-function Customers() {
+function Metsplods() {
   const [dataSource, setDataSource] = useState([]);
   console.log(dataSource);
 
@@ -68,4 +68,4 @@ function Customers() {
     </Space>
   );
 }
-export default Customers;
+export default Metsplods;
